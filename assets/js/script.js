@@ -7,6 +7,13 @@ jQuery(document).ready(function ($) {
   
 });
 
+// sticky navber//
+window.addEventListener("scroll", function () {
+  var menu = this.document.querySelector(".main_menu");
+  menu.classList.toggle("sticky-top", window.scrollY > 0);
+});
+
+
 // navtab slide//
 $('.navtab_main_slide').slick({
   autoplay: false,
